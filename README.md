@@ -23,3 +23,11 @@ To use vLLM, provide `VLLM_MODEL` and point `VLLM_BASE_URL` at an OpenAI-compati
 4. Require an explicit `execute` flag before an actuator adapter can be called.
 
 The default CLI is dry-run and emits a JSON decision. A real robot adapter should be added behind `execute`, with a vendor SDK, controller watchdog, and an independent hardware emergency stop.
+
+## NVIDIA / simulation paths
+
+- `arm_gateway.trajectory` creates bounded joint-space waypoints after the safety decision.
+- `arm_gateway.isaac_export` writes a simulator-neutral JSON trajectory that an Isaac Sim/Omniverse adapter can consume; it does not claim to be a USD asset or a physics result.
+- A production stack can validate the same target in Isaac Sim, export calibrated collision geometry, then connect a vendor controller only after simulation and hardware checks pass.
+
+Official reference: [NVIDIA Isaac robotics platform](https://developer.nvidia.com/isaac/).
