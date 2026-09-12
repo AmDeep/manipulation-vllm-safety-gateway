@@ -1,0 +1,21 @@
+{
+  "request_id": "replay-arm-0001",
+  "task": "Move the gripper to the inspection pose.",
+  "current_joints_rad": {
+    "joint_1": 0.0,
+    "joint_2": -0.6,
+    "joint_3": 1.1,
+    "joint_4": 0.0,
+    "joint_5": 0.4,
+    "joint_6": 0.0
+  },
+  "target_joints_rad": {
+    "joint_1": 0.2,
+    "joint_2": -0.45,
+    "joint_3": 1.3,
+    "joint_4": 0.1,
+    "joint_5": 0.5,
+    "joint_6": 0.2
+  },
+  "execute": false
+}
