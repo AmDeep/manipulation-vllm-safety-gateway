@@ -1,5 +1,9 @@
 # Manipulation vLLM Safety Gateway
 
+![Architecture flowchart](docs/architecture.svg)
+
+![Verified safety-gateway replay output](docs/replay-output.svg)
+
 A robot-arm planning gateway that turns a model proposal into either a validated joint target or a hard rejection. The model is allowed to express intent; it is never trusted with actuator limits.
 
 ## Run with a real or replayed plan
